@@ -1,3 +1,10 @@
+def word_count(book_text):
+  count = 0
+  split_text = book_text.split()
+  for word in split_text:
+    count += 1
+  return count
+
 def count_chars(book_text):
   dict_of_chars = {}
   for i in book_text.lower():
