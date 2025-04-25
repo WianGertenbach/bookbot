@@ -1,6 +1,12 @@
-def count_words(file_str):
+def split_book(file_str):
   split_text = file_str.split()
-  count = 0
+  return split_text
+
+def count_chars(split_text):
+  dict_of_chars = {}
+  list_of_chars = ['a','b','c','4']
   for word in split_text:
-    count += 1
-  return count
+    lower_case_word = word.lower()
+    for char in list_of_chars:
+      if char in word:
+        print(f"{char} in {word}")
